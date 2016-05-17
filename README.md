@@ -1,0 +1,2 @@
+# ahk_for_pokerx_to_hhkb
+PokerX を疑似的にHHKBっぽく使う個人用スクリプト
