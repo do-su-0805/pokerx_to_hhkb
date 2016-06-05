@@ -1,3 +1,7 @@
+! R-Ctrl(keycode 69)をFn的に使うためにmodifier keysから外して Mode_switch 化
+remove Control = Control_R
+keycode 105 = Mode_switch
+
 ! BackSpaceとBackslash(\)を交換する
 ! Mode_Switch と Backspace で DELETEにする
 ! もともとの設定は下記コメントアウト参照
@@ -6,11 +10,14 @@
 keycode  22 = backslash bar backslash bar
 keycode  51 = BackSpace BackSpace Delete BackSpace
 
-! R-Ctrl(keycode 69)をFn的に使うためにmodifier keysから外して Mode_switch 化
-remove Control = Control_R
-keycode 105 = Mode_switch
-
-
-
-
+! Mode_switch と [;'/ で ↑←→↓
+! もともとの設定は下記コメントアウト参照
+! keycode  34 = bracketleft braceleft bracketleft braceleft
+! keycode  47 = semicolon colon semicolon colon
+! keycode  48 = apostrophe quotedbl apostrophe quotedbl
+! keycode  61 = slash question slash question
+keycode  34 = bracketleft braceleft Up braceleft
+keycode  47 = semicolon colon Left colon
+keycode  48 = apostrophe quotedbl Right quotedbl
+keycode  61 = slash question Down question
 
