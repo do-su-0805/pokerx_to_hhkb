@@ -1,8 +1,16 @@
 ! BackSpaceとBackslash(\)を交換する
+! Mode_Switch と Backspace で DELETEにする
 ! もともとの設定は下記コメントアウト参照
-!keycode  22 = BackSpace BackSpace BackSpace BackSpace
-!keycode  51 = backslash bar backslash bar
+! keycode  22 = BackSpace BackSpace BackSpace BackSpace
+! keycode  51 = backslash bar backslash bar
 keycode  22 = backslash bar backslash bar
-keycode  51 = BackSpace BackSpace BackSpace BackSpace
+keycode  51 = BackSpace BackSpace Delete BackSpace
+
+! R-Ctrl(keycode 69)をFn的に使うためにmodifier keysから外して Mode_switch 化
+remove Control = Control_R
+keycode 105 = Mode_switch
+
+
+
 
 
