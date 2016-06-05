@@ -1,0 +1,8 @@
+! BackSpaceとBackslash(\)を交換する
+! もともとの設定は下記コメントアウト参照
+!keycode  22 = BackSpace BackSpace BackSpace BackSpace
+!keycode  51 = backslash bar backslash bar
+keycode  22 = backslash bar backslash bar
+keycode  51 = BackSpace BackSpace BackSpace BackSpace
+
+
